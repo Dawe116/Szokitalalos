@@ -1,0 +1,90 @@
+﻿<Window x:Class="Szokitalalos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Szokitalalos"
+        mc:Ignorable="d"
+        Title="Fa akasztó" Height="450" Width="1200">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="50"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Menu Grid.Row="0">
+            <MenuItem Name="ItStart" Header="Új játék" Click="Jatekterinit"/>
+            <MenuItem Name="ItRögzít" Header="Rögzít" Click="ItRögzít_Click" />
+            <MenuItem Name="ItDB" Header="Tippek"/>
+        </Menu>
+
+        <StackPanel Name="myStack" Grid.Row="1" Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Top">
+            
+        </StackPanel>
+
+
+        <StackPanel  Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="2" Grid.Column="0">
+            <Button Content="q"  Click="TippClick"/>
+            <Button Content="w"  Click="TippClick"/>
+            <Button Content="e"  Click="TippClick"/>
+            <Button Content="r"  Click="TippClick"/>
+            <Button Content="t"  Click="TippClick"/>
+            <Button Content="z"  Click="TippClick"/>
+            <Button Content="u"  Click="TippClick"/>
+            <Button Content="i"  Click="TippClick"/>
+            <Button Content="o"  Click="TippClick"/>
+            <Button Content="p"  Click="TippClick"/>
+            <Button Content="ő"  Click="TippClick"/>
+            <Button Content="ú"  Click="TippClick"/>
+            <Button Content="ű"  Click="TippClick"/>
+            <Button Content="ö"  Click="TippClick"/>
+            <Button Content="ü"  Click="TippClick"/>
+            <Button Content="ó"  Click="TippClick"/>
+        </StackPanel>
+
+
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="3" Grid.Column="0">
+            <Button Content="a"  Click="TippClick"/>
+            <Button Content="s"  Click="TippClick"/>
+            <Button Content="d"  Click="TippClick"/>
+            <Button Content="f"  Click="TippClick"/>
+            <Button Content="g"  Click="TippClick"/>
+            <Button Content="h"  Click="TippClick"/>
+            <Button Content="j"  Click="TippClick"/>
+            <Button Content="k"  Click="TippClick"/>
+            <Button Content="l"  Click="TippClick"/>
+            <Button Content="é"  Click="TippClick"/>
+            <Button Content="á"  Click="TippClick"/>
+            <Button Content="í"  Click="TippClick"/>
+            <Button Content="y"  Click="TippClick"/>
+            <Button Content="x"  Click="TippClick"/>
+            <Button Content="c"  Click="TippClick"/>
+            <Button Content="v"  Click="TippClick"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="4" Grid.Column="0">
+            <Button Content="b"  Click="TippClick"/>
+            <Button Content="n"  Click="TippClick"/>
+            <Button Content="m"  Click="TippClick"/>
+        </StackPanel>
+
+        <Image x:Name="imgFa" Grid.Row="5" Grid.Column="1"/>
+    </Grid>
+</Window>
