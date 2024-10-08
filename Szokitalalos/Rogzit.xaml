@@ -8,7 +8,15 @@
         Title="Rogzit" Height="300" Width="250">
 
     <StackPanel>
-        
+        <Label Content="Kérlek add meg a neved és a Tippjeid számát"/>
+        <Label Content="Neve: "/>
+        <TextBox Name="txbName"/>
+
+        <Label Content="Tippekszama: "/>
+        <TextBox Name="txbTipps"/>
+
+        <Button Name="btnSave" Content="Rögzít" Margin="5" Click="btnSave_Click"/>
+        <Button Name="btnCancel" Content="Mégse" Margin="5" Click="btnCancel_Click"/>
     </StackPanel>
     
 </Window>

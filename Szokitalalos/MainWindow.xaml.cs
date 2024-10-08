@@ -91,6 +91,10 @@ namespace Szokitalalos
                 if (hibaSzam < MaxHiba)
                 {
                     MessageBox.Show($"Ügyi vagy! A kitaláltad a {szo},\n Tippek száma: {db}");
+                    Rogzit newWindow = new Rogzit();
+                    newWindow.Tipps = db;
+                    newWindow.ShowDialog();
+                    
 
                 }
                 else
@@ -119,9 +123,6 @@ namespace Szokitalalos
             return true;
         }
 
-        private void ItRögzít_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
     }
 }

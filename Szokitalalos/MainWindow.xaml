@@ -30,7 +30,6 @@
         
         <Menu Grid.Row="0">
             <MenuItem Name="ItStart" Header="Új játék" Click="Jatekterinit"/>
-            <MenuItem Name="ItRögzít" Header="Rögzít" Click="ItRögzít_Click" />
             <MenuItem Name="ItDB" Header="Tippek"/>
         </Menu>
 

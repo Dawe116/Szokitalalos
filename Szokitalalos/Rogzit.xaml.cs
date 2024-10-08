@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,21 @@ namespace Szokitalalos
     /// </summary>
     public partial class Rogzit : Window
     {
+        public int Tipps { get; set; }
         public Rogzit()
         {
             InitializeComponent();
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            StreamWriter kimenet = new StreamWriter("ranglista.txt");
+
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }
